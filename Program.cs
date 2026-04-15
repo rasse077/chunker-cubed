@@ -25,7 +25,7 @@ class Program
             Directory.CreateDirectory(path);
         }
 
-        string url = "https://builds.rebootfn.org/6.31.rar";
+        string api = "https://builds.rebootfn.org/6.31.rar";
         string output = Path.Combine(path, "6.31.rar");
 
         Console.WriteLine("\nStarting download...\n");
@@ -33,7 +33,7 @@ class Program
         try
         {
             using var client = new HttpClient();
-            using var response = await client.GetAsync(url, HttpCompletionOption.ResponseHeadersRead);
+            using var response = await client.GetAsync(api, HttpCompletionOption.ResponseHeadersRead);
 
             response.EnsureSuccessStatusCode();
 

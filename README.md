@@ -9,3 +9,7 @@ credits to my friend for scripting this.
 
 # API
 https://discord.gg/rebootmp
+
+
+# PROJECT CUBED!
+https://discord.gg/tnsVbZEStS
